@@ -6,8 +6,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.profesorp.configclient.bean.BeanConfiguration;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @RestController
+@EnableSwagger2
 public class ConfigServiceController {
 	
 	@Value("${valores.valor_fijo}")
